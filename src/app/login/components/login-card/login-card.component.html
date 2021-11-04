@@ -1,0 +1,33 @@
+<ion-img src="/assets/logo.jpg" *ngIf="isMobile"></ion-img>
+<ion-card [ngClass]="{'desktop': !isMobile, 'mobile': isMobile}">
+  <ion-card-header *ngIf="!isMobile">
+    <ion-img src="/assets/logo.jpg"></ion-img>
+    <ion-card-title>Login</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <ion-item>
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+      <ion-input type="email" placeholder="Email"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-input type="password" placeholder="Contraseña"></ion-input>
+    </ion-item> 
+
+    <ion-item lines="none">
+      <ion-label>Recordar</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <ion-button 
+      mode="ios"
+      [expand]="buttonStyles.expand"
+      [fill]="buttonStyles.fill" 
+      [shape]="buttonStyles.shape"  
+      [strong]="buttonStyles.strong">Acceder</ion-button>
+
+  </ion-card-content>
+</ion-card>
