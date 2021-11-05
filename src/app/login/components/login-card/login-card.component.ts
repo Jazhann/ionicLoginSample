@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ButtonStyles } from '@models/buttonStyles';
-import { Credentials } from '@models/credential';
+import { Credentials } from '@models/credentials';
 import { Globals } from '@shared/globals';
 
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Credentials } from '@models/credential';
+import { Credentials } from '@models/credentials';
 
 @Component({
   selector: 'app-login',
