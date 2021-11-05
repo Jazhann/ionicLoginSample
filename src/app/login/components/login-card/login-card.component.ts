@@ -31,6 +31,9 @@ export class LoginCardComponent {
     this.buttonStyles = this.isMobile ? globals.buttonMobile : globals.buttonDesktop;
   }
 
+  /**
+   * check form values
+   */
   checkFormValues() {
       this.errors.email = this.email.invalid;
       this.errors.password = this.password.invalid;
