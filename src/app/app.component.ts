@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
-import { Globals } from './shared/globals';
+import { Globals } from '@shared/globals';
 
 
 @Component({

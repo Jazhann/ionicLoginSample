@@ -9,17 +9,23 @@
 
     <ion-item>
       <ion-icon slot="start" name="person-outline"></ion-icon>
-      <ion-input type="email" placeholder="Email"></ion-input>
+      <ion-input type="email" placeholder="Email" [formControl]="email"></ion-input>
     </ion-item>
+    <div *ngIf="errors.email" class="alert">
+      <span>Introduzca un email válido</span>
+    </div>
     
     <ion-item>
       <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-      <ion-input type="password" placeholder="Contraseña"></ion-input>
+      <ion-input type="password" placeholder="Contraseña" [formControl]="password"></ion-input>
     </ion-item> 
+    <div *ngIf="errors.password" class="alert">
+      <span>Introduzca una contraseña mayor de 5 caracteres</span>
+    </div>
 
     <ion-item lines="none">
       <ion-label>Recordar</ion-label>
-      <ion-toggle></ion-toggle>
+      <ion-toggle [formControl]="remind"></ion-toggle>
     </ion-item>
 
     <ion-button 
@@ -27,7 +33,8 @@
       [expand]="buttonStyles.expand"
       [fill]="buttonStyles.fill" 
       [shape]="buttonStyles.shape"  
-      [strong]="buttonStyles.strong">Acceder</ion-button>
+      [strong]="buttonStyles.strong"
+      (click)="checkFormValues()">Acceder</ion-button>
 
   </ion-card-content>
 </ion-card>

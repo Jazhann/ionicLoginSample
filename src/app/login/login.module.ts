@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginPage } from './login.page';
 
 import { LoginPageRoutingModule } from './login-routing.module';
@@ -13,7 +13,9 @@ import { LoginCardComponent } from './components/login-card/login-card.component
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     LoginPage,

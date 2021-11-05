@@ -8,8 +8,8 @@ import { Globals } from './globals';
 @NgModule({
   imports: [
     IonicModule,
-    CommonModule
-  ],
+    CommonModule,
+  ]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders<SharedModule> {

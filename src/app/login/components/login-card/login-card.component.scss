@@ -45,6 +45,9 @@ ion-card {
             --border-width: 3px;
         }
 
+        .alert {
+            color: red;
+        }
     }
 }
 
@@ -52,8 +55,33 @@ ion-card {
     width: 80vw;
 }
 
+
+@media (max-width: 1060px) {
+    .desktop {
+        width: 26vw;
+    }
+}
+
 @media (max-width: 960px) {
-    ion-card {
+    .desktop {
         width: 30vw;
+    }
+}
+
+@media (max-width: 780px) {
+    .desktop {
+        width: 34vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .desktop {
+        width: 38vw;
+    }
+}
+
+@media (max-width: 580px) {
+    .desktop {
+        width: 42vw;
     }
 }
