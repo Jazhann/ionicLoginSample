@@ -9,7 +9,7 @@
 
     <ion-item>
       <ion-icon slot="start" name="person-outline"></ion-icon>
-      <ion-input type="email" placeholder="Email" [formControl]="email"></ion-input>
+      <ion-input id="email-input" type="email" placeholder="Email" [formControl]="email"></ion-input>
     </ion-item>
     <div *ngIf="errors.email" class="alert">
       <span>Introduzca un email válido</span>
@@ -17,7 +17,7 @@
     
     <ion-item>
       <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-      <ion-input type="password" placeholder="Contraseña" [formControl]="password"></ion-input>
+      <ion-input id="password-input" type="password" placeholder="Contraseña" [formControl]="password"></ion-input>
     </ion-item> 
     <div *ngIf="errors.password" class="alert">
       <span>Introduzca una contraseña mayor de 5 caracteres</span>
@@ -29,6 +29,7 @@
     </ion-item>
 
     <ion-button 
+      id="signin-button"
       mode="ios"
       [expand]="buttonStyles.expand"
       [fill]="buttonStyles.fill" 
